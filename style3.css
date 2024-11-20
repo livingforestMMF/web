@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Estilo básico sugerido */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+img {
+    max-width: 100%;
+    display: block; /* Elimina el espacio extra en imágenes */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* Agrega espacio lateral */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-color: beige;
+    padding: 70px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgba(17, 17, 17, 1);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul {
+    display: flex; /* Cambia float por flexbox */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    margin: 0 10px; /* Espaciado */
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgba(17, 17, 17, 1);
+    display: block;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+
+.submenu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#carrito {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+    display: none; /* Muestra esto al hacer hover o clic */
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-height: 400px;
+}
+
+
+table{
+    width: 100%;
+
+}
+
+
+th, td{
+    color: beige;
+
+}
+
+.borrar{
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: beige;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+padding: 0 200px;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+.header-txt h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    margin-bottom: 15px;
+
+}
+
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #111111;
+    color: beige;
+    border-radius: 5px;
+
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #111111;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+
+.product {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product h2 {
+    color: #111111;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño adaptable */
+    gap: 50px;
+}
+
+.product {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Asegura un fondo uniforme */
+    
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Eleva el producto al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.product img {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin-bottom: 20px;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin: 20px 0 15px; /* Espacio superior para separación */
+}
+
+.product p {
+    font-size: 16px;
+    color: #555; /* Texto gris para descripciones */
+    margin-bottom: 15px;
+}
+
+
+.product p, .precio{
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+
+
+
